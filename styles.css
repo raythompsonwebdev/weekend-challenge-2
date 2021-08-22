@@ -1,16 +1,17 @@
 
 :root {
-  --page-background: rgb(150, 150, 150) ;  
+  --page-background: white ;  
 }
 
 
 body {
   display: flex;
   margin: 0;
+  background: var(--page-background);
 }
 
 #sidebar {
-  background: var(--page-background);
+  background: rgb(150, 150, 150);
   height: 100vh;
   width: 40vw;
   display: flex;

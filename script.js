@@ -14,6 +14,8 @@
 // When the user clicks the buttons on the right, the content of the right hand side should update.
 // For example, you could update the right-hand-side to show information on three different artists and have their names in the buttons
 
+//https://stackblitz.com/edit/weekend-challenge-2-eqnsjb?file=script.js
+
 // get all buttons
 let allButton = document.getElementsByTagName('button');
 

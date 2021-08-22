@@ -13,7 +13,25 @@ body {
 #sidebar {
   background: rgb(150, 150, 150);
   height: 100vh;
-  width: 40vw;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#content-container{
+  width: 60vw;
+  padding:0.25em;
+}
+
+#content-container p{
+  font-size:0.9em;
+}
+
+#sidebar2 {
+  background: rgb(150, 150, 150);
+  height: 100vh;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -56,4 +74,16 @@ button:hover{
 
 #blue-button{
   background-color: blue
+}
+
+#one-button{
+  background-color: orange;
+}
+
+#two-button{
+  background-color: aqua;
+}
+
+#three-button{
+  background-color: brown
 }

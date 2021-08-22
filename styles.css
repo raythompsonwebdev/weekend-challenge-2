@@ -1,10 +1,16 @@
+
+:root {
+  --page-background: rgb(150, 150, 150) ;  
+}
+
+
 body {
   display: flex;
   margin: 0;
 }
 
 #sidebar {
-  background: rgb(150, 150, 150);
+  background: var(--page-background);
   height: 100vh;
   width: 40vw;
   display: flex;
@@ -27,4 +33,26 @@ body {
 
 .active {
   border: yellow 0.2em solid;
+}
+
+button{
+  border:none;
+  display:block;
+  height:100;
+}
+
+button:hover{
+  cursor:pointer;  
+}
+
+#red-button{
+  background-color: red;
+}
+
+#green-button{
+  background-color: green;
+}
+
+#blue-button{
+  background-color: blue
 }

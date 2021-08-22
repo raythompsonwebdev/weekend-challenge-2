@@ -24,18 +24,31 @@ let currentBgCol = getComputedStyle(document.body).getPropertyValue(
   '--page-background'
 );
 
-for (let u = 0; u < allButton.length; u++) {
-  console.log(allButton[u]);
-  allButton[u].addEventListener('click', e => {
-    e.preventDefault();
-    if (currentBgCol !== allButton[u].textContent) {
-      allButton[u].classList.add("active");
-      document.body.style.setProperty(
-        '--page-background',
-        `${allButton[u].textContent}`
-      );     
-    } 
-  });
 
 
-}
+  for (let u = 0; u < allButton.length; u++) {
+    //console.log(allButton[u]);
+    allButton[u].addEventListener('click', e => {
+      e.preventDefault();
+
+      //console.log(e.target)
+      if (currentBgCol !== allButton[u].textContent && allButton[u].className != "active") {
+              console.log(e.target.previousElementSibling)
+        allButton[u].classList.add("active");
+  
+        document.body.style.setProperty(
+          '--page-background',
+          `${allButton[u].textContent}`
+        );     
+      }else{
+        allButton[u].classList.remove("active");
+        document.body.style.setProperty(
+          '--page-background',
+          `${currentBgCol}`
+        );   
+      }
+      
+      
+    });  
+
+  }
